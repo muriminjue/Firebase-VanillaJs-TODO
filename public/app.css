@@ -1,0 +1,17 @@
+body {
+  width: 100%;
+}
+#signedOut {
+  height: 100%;
+}
+#signedOut .card {
+  width: 30rem;
+}
+
+/* #signedIn .cotainer *{
+  margin:auto;
+} */
+
+#signedIn form div *{
+  width: 100%;
+}
