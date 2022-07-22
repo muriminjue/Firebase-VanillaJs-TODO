@@ -9,7 +9,7 @@ const newTaskDate = document.getElementById("newtaskdate");
 const itemList = document.getElementById("itemlist");
 
 // settings
-// newTaskDate.min= new Date().toISOString().split(".")[0];
+newTaskDate.min= new Date().toISOString().slice(0,new Date().toISOString().lastIndexOf(":"));
 // newTaskDate.addEventListener("change", (e)=>{e.preventDefault(); newTaskDate.value=new Date(e.target.value).toISOString().split(".")[0]})
 
 const auth = firebase.auth();
@@ -48,7 +48,7 @@ auth.onAuthStateChanged((user) => {
       .onSnapshot((querySnapshot) => {
         // Map results to an array of li elements
         const items = querySnapshot.docs.map((doc) => {
-          return `<li>${doc.data().name}</li>`;
+          return `<li>${doc.data().name} </li>`;
         });
         itemList.innerHTML = items.join("");
       });
