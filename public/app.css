@@ -1,17 +1,71 @@
 body {
   width: 100%;
+  height: 100%;
+  background-color: azure;
 }
 #signedOut {
-  height: 100%;
-}
-#signedOut .card {
-  width: 30rem;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 30%;
 }
 
+#signedOut .card {
+  width: 18rem;
+  border: none;
+  background-color: azure;
+}
+
+#loading {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
 /* #signedIn .cotainer *{
   margin:auto;
 } */
 
-#signedIn form div *{
+#signedIn .main-section {
+  width: 40rem;
+  margin: 20px auto 0 auto;
+  padding: 10px 5px;
+  background-color: azure;
+}
+
+#signedIn form div * {
   width: 100%;
+}
+
+#itemlist li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  padding: 5px 2px;
+}
+
+#itemlist li div button {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #signedIn .container-fluid {
+    padding: 0;
+  }
+  #signedIn .main-section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 5px;
+  }
+}
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0%;
+  padding: 20px auto;
+  background-color: lavender;
+  margin-bottom: 0;
 }
