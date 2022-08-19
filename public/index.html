@@ -69,26 +69,30 @@
         <div class="card-body">
           <h5 class="card-title mb-2">Welcome</h5>
           <p class="card-text mb-2">Happiness is <span>...to finish a todo list</span></p>
-          <a id="signIn" class="btn btn-primary  btn-lg my-2"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> SignIn With Google</a>
+          <a id="signIn" class="btn btn-primary  btn-lg my-2"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+            SignIn With Google</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="signedIn" hidden="true" >
+  <section id="signedIn" hidden="true">
     <div class="container-fluid">
       <div class="main-section d-flex flex-column align-items-center justify-content-center">
         <div id="userDetails" class="user"> </div>
+        <div class="text-center"><a id="signOut" class="btn m-2"><i class="fas fa-sign-out-alt"
+              style="color:blue">SignOut</i></a></div>
         <div class="form m-2">
           <form id="newtask" class="row g-3">
-            <div class="col-md-8 col=sm=12">              
+            <div class="col-md-7 col=sm=12">
               <label for="newtaskname">Title:</label>
-              <input type="text" class="form-control" name="newtaskname" id="newtaskname" placeholder="New task..." required>
-            </div>
-            <div class="col-md-2 col=sm=12">
-              <label for="newtaskdate">Due Date:</label>
-              <input type="datetime-local" class="form-control" name="newtaskdate" id="newtaskdate" placeholder="Due Date"
+              <input type="text" class="form-control" name="newtaskname" id="newtaskname" placeholder="New task..."
                 required>
+            </div>
+            <div class="col-md-3 col=sm=12">
+              <label for="newtaskdate">Due Date:</label>
+              <input type="datetime-local" class="form-control" name="newtaskdate" id="newtaskdate"
+                placeholder="Due Date" required>
             </div>
             <div class="col-md-2 col=sm=12">
               <label for=""></label>
@@ -106,8 +110,6 @@
           <a id="signOut" class="btn btn-primary d-inline m-2">Sign Out</a>
         </div> -->
 
-        <div style="float: right; " class="sticky-bottom"><a id="signOut" class="btn m-2"><i class="fas fa-sign-out-alt"
-              style="color:blue">SignOut</i></a></div>
       </div>
     </div>
   </section>
