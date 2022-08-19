@@ -45,6 +45,7 @@ auth.onAuthStateChanged((user) => {
         status: "incomplete",
         createdAt: serverTimestamp(),
       });
+      newTaskForm.reset()
     });
 
     unsubscribe = todoRef
