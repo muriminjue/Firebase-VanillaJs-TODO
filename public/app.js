@@ -60,8 +60,6 @@ auth.onAuthStateChanged((user) => {
             listDiv = document.createElement("div");
 
           listDiv.style = "float: right";
-
-          listCheckBox.value = doc.id;
           listCheckBox.onclick = () => {
             todoRef.doc(doc.id).update({
               status: "complete",
